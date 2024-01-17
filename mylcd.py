@@ -12,9 +12,9 @@ while True:
     lcd_line_2 = "IP " + get_ip()
     lcd_line_3 = "Web octopi.local"
     lcd.clear()
+    lcd.text(lcd_line_3,1)
     lcd.text(lcd_line_1,2)
+    sleep(15)
     lcd.text(lcd_line_2,2)
-    sleep(30)
-    lcd.text(lcd_line_3,2)
-    sleep(30)
+    sleep(45)
 
