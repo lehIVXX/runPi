@@ -1,0 +1,12 @@
+[Unit]
+Description=LCD IP Display
+After=multi-user.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/ykg/runPi/mylcd.py"
+WorkingDirectory=/home/ykg/runPi
+Restart=always
+TimeoutSec=infinity
+User=ykg
+[Install]
+WantedBy=multi-user.target
